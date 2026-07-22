@@ -171,9 +171,9 @@ def train_models(df_encoded):
 # ----------------------------------------------------------------------------
 # UI
 # ----------------------------------------------------------------------------
-st.title("✈️ Airline Passenger Satisfaction — Dashboard Analisis & Klasifikasi")
+st.title("Dashboard Airline Passenger Satisfaction")
 st.caption(
-    "Dashboard analisis kepuasan penumpang maskapai penerbangan — dataset sudah tertanam, "
+    "Dashboard analisis kepuasan penumpang maskapai penerbangan"
     "tinggal ditelusuri melalui tab di bawah ini."
 )
 
@@ -317,7 +317,7 @@ with tabs[3]:
 # TAB 5 — FEATURE IMPORTANCE
 # ----------------------------------------------------------------------------
 with tabs[4]:
-    st.subheader(f"Feature Importance — Model Terbaik ({best_model_name})")
+    st.subheader(f"Feature Importance Model Terbaik ({best_model_name})")
 
     best_model = fitted_models[best_model_name]
     if hasattr(best_model, "feature_importances_"):
@@ -360,4 +360,4 @@ Bagian ini menampilkan ringkasan otomatis berbasis angka aktual hasil run terkin
     )
 
 st.markdown("---")
-st.caption("Dashboard dibuat dengan Streamlit — pipeline identik dengan notebook utama untuk konsistensi hasil.")
+st.caption("Dashboard dibuat dengan Streamlit")

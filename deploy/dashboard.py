@@ -337,7 +337,7 @@ with tabs[4]:
     best_row = results_df.loc[best_model_name]
     st.markdown(
         f"""
-**Temuan Utama (otomatis dari hasil di atas)**
+**Temuan Utama**
 - Model terbaik: **{best_model_name}** dengan F1-score **{best_row['f1_score']:.3f}**,
   akurasi testing **{best_row['accuracy']:.3f}**.
 - 5 fitur paling berpengaruh terhadap kepuasan penumpang:

@@ -334,12 +334,6 @@ with tabs[4]:
     st.dataframe(top_features.reset_index().rename(columns={"index": "Fitur", 0: "Importance"}),
                  use_container_width=True)
 
-# ----------------------------------------------------------------------------
-# TAB 6 — INSIGHT BISNIS
-# ----------------------------------------------------------------------------
-with tabs[5]:
-    st.subheader("Insight Bisnis")
-
     best_row = results_df.loc[best_model_name]
     st.markdown(
         f"""
@@ -351,11 +345,18 @@ with tabs[5]:
         """
     )
 
+# ----------------------------------------------------------------------------
+# TAB 6 — INSIGHT BISNIS
+# ----------------------------------------------------------------------------
+with tabs[5]:
+    st.subheader("Insight Bisnis")
+
     st.markdown(
         """
-**Insight bisnis, rekomendasi, keterbatasan, dan saran pengembangan versi lengkap**
-dijelaskan secara naratif pada dokumen laporan (Word) yang menyertai dashboard ini.
-Bagian ini menampilkan ringkasan otomatis berbasis angka aktual hasil run terkini.
+●	Investasi perbaikan pada proses online boarding (kemudahan proses check-in/boarding digital) berpotensi memberikan dampak signifikan terhadap peningkatan kepuasan penumpang, karena merupakan salah satu prediktor terkuat setelah rating layanan komposit.
+●	Kualitas layanan wifi dan hiburan dalam pesawat (inflight entertainment) merupakan area yang layak diprioritaskan dalam alokasi anggaran perbaikan layanan, mengingat kontribusinya yang tinggi terhadap prediksi kepuasan.
+●	Karena rating layanan individual saling berkorelasi dan dapat diringkas menjadi satu skor komposit (avg_service_rating) yang sangat prediktif, maskapai dapat menggunakan skor komposit ini sebagai indikator kesehatan layanan (service health score) yang dipantau secara berkala per rute atau per kelas penerbangan.
+●	Model klasifikasi yang telah dilatih (XGBoost) berpotensi diimplementasikan sebagai sistem peringatan dini (early-warning system) untuk mengidentifikasi penumpang dengan probabilitas ketidakpuasan tinggi selama penerbangan berlangsung, sehingga kru dapat melakukan intervensi layanan secara real-time.
         """
     )
 

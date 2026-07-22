@@ -357,7 +357,7 @@ with tabs[5]:
 
 2. Kualitas layanan wifi dan hiburan dalam pesawat (inflight entertainment) merupakan area yang layak diprioritaskan dalam alokasi anggaran perbaikan layanan, mengingat kontribusinya yang tinggi terhadap prediksi kepuasan.
 
-3. Karena rating layanan individual saling berkorelasi dan dapat diringkas menjadi satu skor komposit (avg_service_rating) yang sangat prediktif, maskapai dapat menggunakan skor komposit ini sebagai indikator kesehatan layanan (service health score) yang dipantau secara berkala per rute atau per kelas penerbangan.
+3. Karena rating layanan individual saling berkorelasi dan dapat diringkas menjadi satu skor komposit yang sangat prediktif, maskapai dapat menggunakan skor komposit ini sebagai indikator kesehatan layanan (service health score) yang dipantau secara berkala per rute atau per kelas penerbangan.
 
 4. Model klasifikasi yang telah dilatih (XGBoost) berpotensi diimplementasikan sebagai sistem peringatan dini (early-warning system) untuk mengidentifikasi penumpang dengan probabilitas ketidakpuasan tinggi selama penerbangan berlangsung, sehingga kru dapat melakukan intervensi layanan secara real-time.
         """
